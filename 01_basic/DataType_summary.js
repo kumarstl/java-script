@@ -28,4 +28,33 @@ let myobj={
 const myfuncation=function(){
     console.log("Hello sourav");   
 }
- console.log( typeof outsideTemp);
+ //console.log( typeof outsideTemp);
+
+
+ //----------------------Stack(Primitive),Heap (NOn Primitive)
+
+
+ let myname ="souravkumar.com"
+ let anothername = myname
+ anothername="kumar"
+
+
+//  console.log(myname);
+//  console.log(anothername);
+ 
+
+let userone={
+    email:"user@google.com",
+    upi:"user@ybl"
+}
+
+let usertwo=userone
+
+usertwo.email="souravkr@gmail.com"
+console.log(userone.email);
+console.log(usertwo.email);
+
+
+
+
+ 
