@@ -35,6 +35,7 @@ console.log(newDate.getMonth());
 // `${newDate.getMonth} and the time`
 
 
+
 newDate.toLocaleString('default',{
     weekday:"long"
 });
