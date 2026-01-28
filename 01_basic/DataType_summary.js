@@ -33,7 +33,7 @@ const myfuncation=function(){
  //console.log( typeof outsideTemp);
 
 
- //----------------------Stack(Primitive),Heap (NOn Primitive)
+ //------------------------Stack(Primitive),Heap (NOn Primitive)
 
 
  let myname ="souravkumar.com"
