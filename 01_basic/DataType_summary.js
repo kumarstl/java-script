@@ -1,5 +1,5 @@
 //#Primitive
-// 7 Types:string; Number; Boolean; Null; Undefined; Symbol;BigInt
+// 7 Types:string; Number; Boolean; Null; Undefined; Symbols;BigInt
 //Integer datatype
 
 const score =100
