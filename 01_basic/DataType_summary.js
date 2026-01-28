@@ -1,6 +1,7 @@
 //#Primitive
-// 7 Types:string; Number; Boolean; Null; Undefined; Sybol;BigInt
+// 7 Types:string; Number; Boolean; Null; Undefined; Symbol;BigInt
 //Integer datatype
+
 const score =100
 const scorevalue=100.3
 
@@ -13,9 +14,10 @@ const anotherId=('123')
 
 console.log(id===anotherId);
 
-//const bigNumber=4874454664645351n
+// const bigNumber=4874454664645351n
 
 // #Reference: (Non primitive)
+
 // Array,Objects,Funcation
 
 const heros =["shaktiman","naagraj","doga"]
