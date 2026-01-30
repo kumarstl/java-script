@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom...</title>
+</head>
+<body style="background-color: #212121; color: aliceblue;">
+
+    <ul class="language">
+        <li>JAva Script</li>
+    </ul> 
+</body>
+<script>
+    // First Approach--
+    function addLanguage (langauge){
+        const li= document.createElement('li');
+        li.innerHTML=`${langauge}`
+        document.querySelector('.language').
+        appendChild(li)
+    }
+    addLanguage("Python")
+    addLanguage("Java")
+
+    // Second Approach--
+
+    function addOptiLanguage(langName){
+        const li=document.createElement('li')
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptiLanguage('golang')
+    
+
+    //Edit...
+    const secondlnaguage=document.querySelector("li:nth-child(2)")
+
+    //secondlnaguage.innerHTML="sourav"
+    // 2nd..
+
+    const newli=document.createElement('li')
+    newli.textContent="C++"
+    secondlnaguage.replaceWith(newli)
+
+    //Edit
+    const firstLang= document.querySelector("li:first-child")
+    firstLang.outerHTML='<li>Type-Script</li>'
+
+    //Renove
+    const lastLang=document.querySelector('li:last-child')
+    lastLang.remove()
+
+</script>
+</html>
