@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events HTML</title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing Image..</h2>
+
+    <ul id="images">
+         <li><img width="200px"  id="photoshop" src="https://images.pexels.com/photos/32228895/pexels-photo-32228895.jpeg" alt=""></li>
+    <li><img width="200px"  id="camera" src="https://images.pexels.com/photos/33416262/pexels-photo-33416262.jpeg" alt=""></li>  <!--onclick="alert('Table')" This is Not good Approach -->
+   <li><img width="200px"  id="photoshop1" src="https://images.pexels.com/photos/32228895/pexels-photo-32228895.jpeg" alt=""></li>
+    <li><img width="200px"  id="camera1" src="https://images.pexels.com/photos/33416262/pexels-photo-33416262.jpeg" alt=""></li>
+
+    <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+    </ul>
+
+   
+</body>
+<script>
+    //AttachEvent()..
+    //jQuery-On
+
+    //Types,timestamp,defaultPrevented
+//Target,toElement,SrcElement,currentTarget,
+// clickX,clickY,screenX,screenY,
+//altkey,ctrlkey,shiftkey,keyCode,
+
+// ------------
+    // document.getElementById('camera').onclick=function(){
+    //     alert("camera Clicked")
+    // }
+
+//-->Event Propagation batata hai ki event DOM me kaise travel karta hai
+//Jab kisi element par event hota hai, wo parent elements tak bhi jata hai
+
+//True--> Means Capturing mode..
+
+// document.getElementById('images').addEventListener('click', function(e) {
+//  console.log("Click inside the Ul");
+
+// },false);
+
+// document.getElementById('camera').addEventListener('click', function(e) {
+//  console.log(" Camera Click ");
+//  e.stopPropagation()
+// },false);
+
+// preventDefault()--->
+
+// preventDefault() browser ka default action rok deta hai.
+// Event fire hota hai, par browser ka kaam nahi hota.
+
+// document.getElementById('google').addEventListener
+// ('click',function(e){
+//     e.preventDefault();
+//     e.stopPropagation()
+//     console.log("google clicked");
+    
+// },false)
+
+document.querySelector('#images').addEventListener
+('click',function(e){
+    console.log(e.target.tagName);
+    if (e.target.tagName==='IMG') {
+        console.log(e.target.id);
+        let removeIt=e.target.parentNode
+     removeIt.remove() 
+    }
+})
+
+ // removeIt.parentNode.removeChild(removeIt)
+
+
+
+
+
+
+
+</script>
+</html>
