@@ -104,3 +104,5 @@ fetch('https://api.github.com/users/kumarstl')
 })
 .catch((error) => console.log(error))
 
+//-->👉 fetch API se data lao → JSON banao → use karo → error handle karo
+
